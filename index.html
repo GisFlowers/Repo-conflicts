@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input:out-of-range {
+                background-color: rgba(255, 0, 0, 0.25);
+                border-color: red;
+            }
+
+            input:hover{
+                background-color: lightblue;
+            }
+
+            input[type="checkbox"]:checked {
+                box-shadow: 0 0 0 3px yellow;
+            }
+        </style>
+
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+    </head>
+
+    <body>
+        <h1>Formulario 1 simple</h1>
+        
+        <div class="out-of-range">
+            Número:
+            <input type="number" name="cantidad" min="1" max="10"><br/>
+        </div>
+
+        
+            <br/>
+            Checkboxes: <br/>
+            CheckBox 1
+            <input type="checkbox" name="chbx1" value="chk1"><br/>
+            CheckBox 2
+            <input type="checkbox" name="chbx2" value="chk2"><br/>
+            CheckBox 3
+            <input type="checkbox" name="chbx3" value="chk3" checked><br/>
+
+
+            <input type="submit" name="Enviar">
+
+    </body>
+
+
+</html>
